@@ -1,0 +1,5 @@
+{
+var uri = $"https://api.opsgenie.com/v2/alerts/requests/{requestId}";
+client.Headers.Add(HttpRequestHeader.Authorization, genieKey);
+request = client.DownloadString(uri);
+}
